@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dmodule>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/process.xsd">
+  <identAndStatusSection>
+    <dmAddress>
+      <dmIdent>
+        <dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="130" infoCodeVariant="A" itemLocationCode="A"/>
+        <language countryIsoCode="US" languageIsoCode="en"/>
+        <issueInfo issueNumber="004" inWork="00"/>
+      </dmIdent>
+      <dmAddressItems>
+        <issueDate day="31" month="12" year="2016"/>
+        <dmTitle>
+          <techName>Bicycle</techName>
+          <infoName>Riding a bicycle</infoName>
+        </dmTitle>
+      </dmAddressItems>
+    </dmAddress>
+    <dmStatus issueType="changed">
+      <security securityClassification="01" commercialClassification="cc51" caveat="cv51"/>
+      <dataRestrictions>
+        <restrictionInstructions>
+          <dataDistribution>To be made available to all S1000D users.</dataDistribution>
+          <exportControl>
+            <exportRegistrationStmt>
+              <simplePara>Export of this data module to all countries that are the residence of
+                    organizations that are users of S1000D is permitted. Storage of this data module
+                    is to be at the discretion of the organization.</simplePara>
+            </exportRegistrationStmt>
+          </exportControl>
+          <dataHandling>There are no specific handling instructions for this data
+            module.</dataHandling>
+          <dataDestruction>Users may destroy this data module in accordance with their own local
+            procedures.</dataDestruction>
+          <dataDisclosure>There are no dissemination limitations that apply to this data
+            module.</dataDisclosure>
+        </restrictionInstructions>
+        <restrictionInfo>
+          <copyright>
+            <copyrightPara><emphasis>Copyright (C) 2016</emphasis> by each of the following organizations: <randomList><listItem><para>AeroSpace and Defence Industries Associations of Europe - ASD.</para></listItem><listItem><para>Ministries of Defence of the member countries of ASD.</para></listItem></randomList>
+                  </copyrightPara>
+            <copyrightPara>
+              <emphasis>Limitations of liability:</emphasis>
+            </copyrightPara>
+            <copyrightPara>
+              <randomList>
+                <listItem>
+                  <para>This material is provided "As is" and neither ASD nor any person who
+                            has contributed to the creation, revision or maintenance of the material
+                            makes any representations or warranties, express or implied, including
+                            but not limited to, warranties of merchantability or fitness for any
+                            particular purpose.</para>
+                </listItem>
+                <listItem>
+                  <para>Neither ASD nor any person who has contributed to the creation,
+                            revision or maintenance of this material shall be liable for any direct,
+                            indirect, special or consequential damages or any other liability
+                            arising from any use of this material.</para>
+                </listItem>
+                <listItem>
+                  <para>Revisions to this document may occur after its issuance. The user is
+                            responsible for determining if revisions to the material contained in
+                            this document have occurred and are applicable.</para>
+                </listItem>
+              </randomList>
+            </copyrightPara>
+          </copyright>
+          <policyStatement>S1000D-SC-2016-017-002-00 Steering Committee TOR</policyStatement>
+          <dataConds>There are no known conditions that would change the data restrictions for, or
+            security classification of, this data module.</dataConds>
+        </restrictionInfo>
+      </dataRestrictions>
+      <responsiblePartnerCompany enterpriseCode="B6865">
+        <enterpriseName>AEROSPACE AND DEFENCE INDUSTRIES ASSOCIATION OF EUROPE</enterpriseName>
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="B6865">
+        <enterpriseName>AEROSPACE AND DEFENCE INDUSTRIES ASSOCIATION OF EUROPE</enterpriseName>
+      </originator>
+      <applicCrossRefTableRef>
+        <dmRef>
+          <dmRefIdent>
+            <dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+          </dmRefIdent>
+        </dmRef>
+      </applicCrossRefTableRef>
+      <applic>
+        <displayText/>
+      </applic>
+      <brexDmRef>
+        <dmRef>
+          <dmRefIdent>
+            <dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+          </dmRefIdent>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <firstVerification verificationType="tabtop"/>
+      </qualityAssurance>
+      <reasonForUpdate id="rfu-general" updateReasonType="urt03">
+        <simplePara>S1000D upissued</simplePara>
+      </reasonForUpdate>
+      <reasonForUpdate id="rfu-2013-054DE" updateReasonType="urt02">
+        <simplePara>Optional element "title" to be added to element "dmNode"</simplePara>
+      </reasonForUpdate>
+    </dmStatus>
+  </identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef>
+        <dmRefIdent>
+          <dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="042" infoCodeVariant="A" itemLocationCode="A"/>
+        </dmRefIdent>
+      </dmRef>
+      <dmRef>
+        <dmRefIdent>
+          <dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="043" infoCodeVariant="A" itemLocationCode="A"/>
+        </dmRefIdent>
+      </dmRef>
+    </refs>
+    <referencedApplicGroup>
+      <applic id="rightAnswer">
+        <displayText>
+          <simplePara>Inexperienced rider has the right answer.</simplePara>
+        </displayText>
+        <expression>
+          <expression>
+            <variableRef variableName="tourCorrectAnswer"/>
+          </expression>
+          <booleanOperator booleanOperation="equal"/>
+          <expression>
+            <booleanValue>
+              <trueValue/>
+            </booleanValue>
+          </expression>
+        </expression>
+      </applic>
+      <applic id="wrongAnswer">
+        <displayText>
+          <simplePara>Inexperienced rider has the wrong answer.</simplePara>
+        </displayText>
+        <expression>
+          <expression>
+            <variableRef variableName="tourCorrectAnswer"/>
+          </expression>
+          <booleanOperator booleanOperation="equal"/>
+          <expression>
+            <booleanValue>
+              <falseValue/>
+            </booleanValue>
+          </expression>
+        </expression>
+      </applic>
+    </referencedApplicGroup>
+    <process>
+      <variableDeclarations>
+        <variable valueType="string" variableName="name"/>
+        <variable valueType="integer" variableName="age"/>
+        <variable valueType="string" variableName="level">
+          <initialize>
+            <expression>
+              <stringValue>amateur</stringValue>
+            </expression>
+          </initialize>
+        </variable>
+        <variable valueType="boolean" variableName="tourCorrectAnswer">
+          <initialize>
+            <expression>
+              <booleanValue>
+                <falseValue/>
+              </booleanValue>
+            </expression>
+          </initialize>
+        </variable>
+        <variable valueType="integer" variableName="tourMistakes"/>
+        <variable valueType="set-string" variableName="approvedBikers"/>
+      </variableDeclarations>
+      <!--add 'variablePreSet' to set value of variable level.-->
+      <variablePreSet>
+        <assertion>
+          <variableRef variableName="age"/>
+          <expression>
+            <stringValue>13</stringValue>
+          </expression>
+        </assertion>
+        <assertion>
+          <variableRef variableName="tourFinished"/>
+          <expression>
+            <stringValue>False</stringValue>
+          </expression>
+        </assertion>
+      </variablePreSet>
+      <dmSeq>
+        <dmNode>
+          <proceduralStep>
+            <title>Prerequisities</title>
+            <para>Please make sure you are familiar with the functional description of a bicycle:
+							<dmRef><dmRefIdent><dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="042" infoCodeVariant="A" itemLocationCode="A"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>Bicycle</techName><infoName>Description of function</infoName></dmTitle></dmRefAddressItems></dmRef>
+						            </para>
+          </proceduralStep>
+        </dmNode>
+        <dmNode>
+          <title changeMark="1" changeType="add" reasonForUpdateRefIds="rfu-2013-054DE">Querying the basic user information</title>
+          <dialog>
+            <dialogGroup>
+              <dialogGroup>
+                <userEntry>
+                  <prompt>
+                    <paraBasic>Enter your name</paraBasic>
+                  </prompt>
+                  <variableRef variableName="name"/>
+                </userEntry>
+                <userEntry dataEntryFieldLength="3">
+                  <prompt>
+                    <paraBasic>Enter your age</paraBasic>
+                  </prompt>
+                  <variableRef variableName="age"/>
+                  <validate errorMessage="Age must be within 4 to 100">
+                    <expression>
+                      <expression>
+                        <expression>
+                          <variableRef variableName="age"/>
+                        </expression>
+                        <numberOperator numberOperation="greaterThanOrEqual"/>
+                        <expression>
+                          <integerValue>4</integerValue>
+                        </expression>
+                      </expression>
+                      <booleanOperator booleanOperation="and"/>
+                      <expression>
+                        <expression>
+                          <variableRef variableName="age"/>
+                        </expression>
+                        <numberOperator numberOperation="lessThanOrEqual"/>
+                        <expression>
+                          <integerValue>100</integerValue>
+                        </expression>
+                      </expression>
+                    </expression>
+                  </validate>
+                </userEntry>
+                <menu choiceSelection="single" choiceType="select">
+                  <prompt>
+                    <paraBasic>Did you ever ride a bicycle?</paraBasic>
+                  </prompt>
+                  <menuChoice>
+                    <prompt>
+                      <paraBasic>Yes</paraBasic>
+                    </prompt>
+                    <assertion>
+                      <variableRef variableName="level"/>
+                      <expression>
+                        <stringValue>experienced</stringValue>
+                      </expression>
+                    </assertion>
+                  </menuChoice>
+                  <menuChoice>
+                    <prompt>
+                      <paraBasic>No</paraBasic>
+                    </prompt>
+                    <noAssertions/>
+                  </menuChoice>
+                </menu>
+              </dialogGroup>
+              <dialogGroup dialogSeparator="1">
+                <message>
+                  <prompt>
+                    <paraBasic>Age must be within 4 to 100</paraBasic>
+                  </prompt>
+                  <prompt>
+                    <paraBasic>All fields are mandatory</paraBasic>
+                  </prompt>
+                </message>
+              </dialogGroup>
+            </dialogGroup>
+          </dialog>
+        </dmNode>
+        <dmIf>
+          <expression>
+            <booleanFunction booleanAction="not"/>
+            <expression>
+              <expression>
+                <variableRef variableName="level"/>
+              </expression>
+              <numberOperator numberOperation="equal"/>
+              <expression>
+                <stringValue>experienced</stringValue>
+              </expression>
+            </expression>
+          </expression>
+          <dmThenSeq>
+            <dmLoop>
+              <variablePreSet>
+                <assertion>
+                  <variableRef variableName="tourMistakes"/>
+                  <expression>
+                    <integerValue>0</integerValue>
+                  </expression>
+                </assertion>
+              </variablePreSet>
+              <expression>
+                <assert applicPropertyIdent="tourFinished" applicPropertyType="condition" applicPropertyValues="False"/>
+              </expression>
+              <dmSeq>
+                <dmNode>
+                  <proceduralStep>
+                    <title>Introduction</title>
+                    <para>Dear <variableRef variableName="name"/>, because you are an unexperienced user, you will be presented a brief introduction on how to operate a bicycle.</para>
+                  </proceduralStep>
+                  <proceduralStep>
+                    <para>Click <emphasis>next</emphasis>.</para>
+                  </proceduralStep>
+                </dmNode>
+                <dmNode>
+                  <dmRef>
+                    <dmRefIdent>
+                      <dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="043" infoCodeVariant="A" itemLocationCode="A"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>Bicycle</techName>
+                        <infoName>Description attributed to crew</infoName>
+                      </dmTitle>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </dmNode>
+                <dmNode>
+                  <proceduralStep>
+                    <title>Did you really read the instructions?</title>
+                    <para>Before you can proceed to the practical section of this manual, you will be given a simple question to test whether you read the instructions carefully.</para>
+                  </proceduralStep>
+                </dmNode>
+                <dmNode>
+                  <dialog>
+                    <menu choiceSelection="single" choiceType="select">
+                      <prompt>
+                        <paraBasic>The rear brake is operated by</paraBasic>
+                      </prompt>
+                      <menuChoice>
+                        <prompt>
+                          <paraBasic>Left brake lever</paraBasic>
+                        </prompt>
+                        <assertion>
+                          <variableRef variableName="tourCorrectAnswer"/>
+                          <expression>
+                            <booleanValue>
+                              <falseValue/>
+                            </booleanValue>
+                          </expression>
+                        </assertion>
+                        <assertion>
+                          <variableRef variableName="tourMistakes"/>
+                          <expression>
+                            <expression>
+                              <variableRef variableName="tourMistakes"/>
+                            </expression>
+                            <numberOperator numberOperation="plus"/>
+                            <expression>
+                              <integerValue>1</integerValue>
+                            </expression>
+                          </expression>
+                        </assertion>
+                      </menuChoice>
+                      <menuChoice>
+                        <prompt>
+                          <paraBasic>Right brake lever</paraBasic>
+                        </prompt>
+                        <assertion>
+                          <variableRef variableName="tourCorrectAnswer"/>
+                          <expression>
+                            <booleanValue>
+                              <trueValue/>
+                            </booleanValue>
+                          </expression>
+                        </assertion>
+                        <assertion>
+                          <globalPropertyRef applicPropertyIdent="tourFinished" applicPropertyType="condition"/>
+                          <expression>
+                            <booleanValue>
+                              <trueValue/>
+                            </booleanValue>
+                          </expression>
+                        </assertion>
+                      </menuChoice>
+                    </menu>
+                  </dialog>
+                </dmNode>
+                <!-- sample from CPF 2008-006US -->
+                <dmSeqAlts altsName="Rear brake lever answer">
+                  <dmSeq applicRefId="wrongAnswer">
+                    <dmNode>
+                      <proceduralStep>
+                        <title>Wrong answer!</title>
+                        <para>You will be given the introduction once again.</para>
+                        <para>Number of mistakes: <variableRef variableName="tourMistakes"/>
+                                    </para>
+                      </proceduralStep>
+                    </dmNode>
+                  </dmSeq>
+                  <dmSeq applicRefId="rightAnswer">
+                    <dmNode>
+                      <proceduralStep>
+                        <title>Correct!</title>
+                        <para>You can now continue with the practical part of this manual.</para>
+                      </proceduralStep>
+                    </dmNode>
+                  </dmSeq>
+                </dmSeqAlts>
+              </dmSeq>
+            </dmLoop>
+          </dmThenSeq>
+        </dmIf>
+        <dmNode changeMark="1" changeType="modify" reasonForUpdateRefIds="rfu-2013-054DE">
+          <title>Practical part</title>
+          <proceduralStep>
+            <para>Take the bicycle from the garage.</para>
+          </proceduralStep>
+          <proceduralStep>
+            <para>Clean the bicycle from the dust.</para>
+          </proceduralStep>
+          <proceduralStep>
+            <para>Sit on the bike.</para>
+          </proceduralStep>
+          <proceduralStep>
+            <para>...and RIDE!</para>
+          </proceduralStep>
+        </dmNode>
+      </dmSeq>
+      <!--use a 'variablePostSet' to increase value of approvedBikers by 1-->
+      <variablePostSet>
+        <assertion>
+          <variableRef variableName="approved Bikers"/>
+          <expression>
+            <expression>
+              <variableRef variableName="approved Bikers"/>
+            </expression>
+            <setOperator setOperation="add"/>
+            <expression>
+              <variableRef variableName="name"/>
+            </expression>
+          </expression>
+        </assertion>
+      </variablePostSet>
+    </process>
+  </content>
+</dmodule>
