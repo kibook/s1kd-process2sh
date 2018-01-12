@@ -98,6 +98,9 @@
       <xsl:text>do&#10;</xsl:text>
     </xsl:if>
     <xsl:text>dialog</xsl:text>
+    <xsl:if test="@mandatory = '1'">
+      <xsl:text> --no-cancel</xsl:text>
+    </xsl:if>
     <xsl:apply-templates select="parent::title"/>
     <xsl:text> --inputbox "</xsl:text>
     <xsl:apply-templates select="prompt"/>
@@ -155,6 +158,9 @@
 
   <xsl:template match="menu">
     <xsl:text>dialog</xsl:text>
+    <xsl:if test="@mandatory = '1'">
+      <xsl:text> --no-cancel</xsl:text>
+    </xsl:if>
     <xsl:apply-templates select="parent::title"/>
     <xsl:text> --no-tags </xsl:text>
     <xsl:choose>
