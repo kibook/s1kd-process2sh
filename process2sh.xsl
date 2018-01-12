@@ -108,6 +108,7 @@
     <xsl:value-of select="$height"/>
     <xsl:text> </xsl:text>
     <xsl:value-of select="$width"/>
+    <xsl:apply-templates select="default"/>
     <xsl:text> 2>tmp</xsl:text>
     <xsl:text>&#10;</xsl:text>
     <xsl:value-of select="variableRef/@variableName"/>
@@ -119,6 +120,11 @@
       <xsl:apply-templates select="validate"/>
       <xsl:text>done&#10;</xsl:text>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="default">
+    <xsl:text> </xsl:text>
+    <xsl:apply-templates select="expression"/>
   </xsl:template>
 
   <xsl:template match="message">
