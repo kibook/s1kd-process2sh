@@ -363,6 +363,7 @@
   <xsl:template match="booleanFunction">
     <xsl:choose>
       <xsl:when test="@booleanAction = 'not'">! </xsl:when>
+      <xsl:when test="@booleanAction = 'defined'"></xsl:when>
     </xsl:choose>
   </xsl:template>
 
