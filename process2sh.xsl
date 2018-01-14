@@ -6,6 +6,8 @@
 
   <xsl:output method="text"/>
 
+  <xsl:param name="dialog">dialog</xsl:param>
+
   <xsl:param name="height" select="24"/>
   <xsl:param name="width" select="80"/>
 
@@ -68,7 +70,7 @@
       <xsl:text>&#10;</xsl:text>
     </xsl:if>
     <xsl:if test="proceduralStep">
-      <xsl:text>dialog</xsl:text>
+      <xsl:value-of select="$dialog"/>
       <xsl:call-template name="backtitle"/>
       <xsl:apply-templates select="title"/>
       <xsl:text> --msgbox "</xsl:text>
@@ -112,7 +114,7 @@
       <xsl:text>while ! $valid&#10;</xsl:text>
       <xsl:text>do&#10;</xsl:text>
     </xsl:if>
-    <xsl:text>dialog</xsl:text>
+    <xsl:value-of select="$dialog"/>
     <xsl:call-template name="backtitle"/>
     <xsl:if test="@mandatory = '1'">
       <xsl:text> --no-cancel</xsl:text>
@@ -144,7 +146,7 @@
   </xsl:template>
 
   <xsl:template match="message">
-    <xsl:text>dialog</xsl:text>
+    <xsl:value-of select="$dialog"/>
     <xsl:call-template name="backtitle"/>
     <xsl:text> --msgbox "</xsl:text>
     <xsl:apply-templates select="prompt"/>
@@ -181,7 +183,7 @@
   </xsl:template>
 
   <xsl:template match="menu">
-    <xsl:text>dialog</xsl:text>
+    <xsl:value-of select="$dialog"/>
     <xsl:call-template name="backtitle"/>
     <xsl:if test="@mandatory = '1'">
       <xsl:text> --no-cancel</xsl:text>
@@ -394,7 +396,7 @@
     <xsl:text>then&#10;</xsl:text>
     <xsl:text>valid=true&#10;</xsl:text>
     <xsl:text>else&#10;</xsl:text>
-    <xsl:text>dialog </xsl:text>
+    <xsl:value-of select="$dialog"/>
     <xsl:call-template name="backtitle"/>
     <xsl:text> --title Error --msgbox "</xsl:text>
     <xsl:value-of select="@errorMessage"/>
