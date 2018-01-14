@@ -43,6 +43,20 @@
     <xsl:apply-templates select="dmSeq"/>
   </xsl:template>
 
+  <xsl:template name="backtitle">
+    <xsl:text> --backtitle "</xsl:text>
+    <xsl:apply-templates select="ancestor-or-self::dmodule//dmAddressItems/dmTitle"/>
+    <xsl:text>"</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="dmTitle">
+    <xsl:apply-templates select="techName"/>
+    <xsl:if test="infoName">
+      <xsl:text> - </xsl:text>
+      <xsl:apply-templates select="infoName"/>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template match="dmNode">
     <xsl:if test="@applicRefId">
       <xsl:variable name="id" select="@applicRefId"/>
@@ -55,6 +69,7 @@
     </xsl:if>
     <xsl:if test="proceduralStep">
       <xsl:text>dialog</xsl:text>
+      <xsl:call-template name="backtitle"/>
       <xsl:apply-templates select="title"/>
       <xsl:text> --msgbox "</xsl:text>
       <xsl:apply-templates select="proceduralStep"/>
@@ -98,6 +113,7 @@
       <xsl:text>do&#10;</xsl:text>
     </xsl:if>
     <xsl:text>dialog</xsl:text>
+    <xsl:call-template name="backtitle"/>
     <xsl:if test="@mandatory = '1'">
       <xsl:text> --no-cancel</xsl:text>
     </xsl:if>
@@ -128,7 +144,9 @@
   </xsl:template>
 
   <xsl:template match="message">
-    <xsl:text>dialog --msgbox "</xsl:text>
+    <xsl:text>dialog</xsl:text>
+    <xsl:call-template name="backtitle"/>
+    <xsl:text> --msgbox "</xsl:text>
     <xsl:apply-templates select="prompt"/>
     <xsl:text>" </xsl:text>
     <xsl:value-of select="$height"/>
@@ -164,6 +182,7 @@
 
   <xsl:template match="menu">
     <xsl:text>dialog</xsl:text>
+    <xsl:call-template name="backtitle"/>
     <xsl:if test="@mandatory = '1'">
       <xsl:text> --no-cancel</xsl:text>
     </xsl:if>
@@ -375,7 +394,9 @@
     <xsl:text>then&#10;</xsl:text>
     <xsl:text>valid=true&#10;</xsl:text>
     <xsl:text>else&#10;</xsl:text>
-    <xsl:text>dialog --title Error --msgbox "</xsl:text>
+    <xsl:text>dialog </xsl:text>
+    <xsl:call-template name="backtitle"/>
+    <xsl:text> --title Error --msgbox "</xsl:text>
     <xsl:value-of select="@errorMessage"/>
     <xsl:text>" </xsl:text>
     <xsl:value-of select="$height"/>
